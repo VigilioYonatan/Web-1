@@ -106,23 +106,27 @@
     <!-- fin somos  -->
     <!-- formulario contactos -->
     <section class="contactos">
+        <img class="contactos__background" src="./img/contactos.jpg" alt="">
         <form action="" class="contactos-form" method="post">
             <h3 class="contactos-form__title">PARA PEDIDOS Y ENCARGOS ESPECIALES</h3>
-            <label for="Nombre" class="contactos-form__sub">Nombre *
-                <input type="text" name="Nombre" class="contactos-form__input">
-            </label>
-            <label for="Apellido" class="contactos-form__sub">Apellido *
-                <input type="text" name="Apellido" class="contactos-form__input">
-            </label>
-            <label for="Email" class="contactos-form__sub">Email *
+            <div class="contactos-form-mitad">
+                <label for="Nombre" class="contactos-form__sub contactos-form-mitad__input"><b>Nombre *</b>
+                    <input type="text" name="Nombre" class="contactos-form__input">
+                </label>
+                <label for="Apellido" class="contactos-form__sub contactos-form-mitad__input"><b>Apellido *</b>
+                    <input type="text" name="Apellido" class="contactos-form__input">
+                </label>
+            </div> 
+            <label for="Email" class="contactos-form__sub"><b>Email *</b>
                 <input type="text" name="Email" class="contactos-form__input">
             </label>
-            <label for="Telefono" class="contactos-form__sub">Teléfono *
+            <label for="Telefono" class="contactos-form__sub"><b>Téfono</b>
                 <input type="tel" name="Telefono" class="contactos-form__input">
             </label>
-            <label for="Telefono" class="contactos-form__sub">Teléfono *
-                <textarea name="" id="" cols="30" rows="10" class="contactos-form__area"></textarea>
+            <label for="Mensaje" class="contactos-form__sub"><b>Mensaje</b>
+                <textarea name="" id=""   class="contactos-form__area"></textarea>
             </label>
+            <input class="contactos__submit" type="submit" value="Enviar">
         </form>
     </section>
     <!-- fin formulario contactos  -->
