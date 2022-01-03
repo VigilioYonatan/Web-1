@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESPINITAS</title>
+    <!-- estilos css -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    
+
+    <!-- libreria initial Animation  -->
+    <link rel="stylesheet" href="./css/initialAnimation.css">
+  <script defer src="./js/initialAnimation.js"></script>
+  <!-- scripts javascript  -->
+  <script defer src="./js/main.js"></script>
 </head>
 <body>
     <!-- header  -->
@@ -39,8 +47,8 @@
     <!-- container -->
     <section class="container">
         <img class="container__background" src="./img/background.jpg" alt="">
-        <div class="container-logo">
-            <div class="container-logo-logo">
+        <div class="container-logo" data-aos="zoom-in">
+            <div class="container-logo-logo" >
                 <span class="container-logo-logo__txt">DESDE</span>
                 <svg preserveAspectRatio="xMidYMid meet" data-bbox="10.326 50.3 180.129 101.208" xmlns="http://www.w3.org/2000/svg" class="container-logo-logo__img" viewBox="10.326 50.3 180.129 101.208" role="presentation" aria-hidden="true">
                     <g>
@@ -53,26 +61,26 @@
             </div>
             <h2 class="container-logo__title">VIGILIO</h2>
             <span class="container-logo__sub">ESPECIALISTA EN WEB DESIGN</span>
-            <a href="" class="container-logo__btn">Comprar online</a>
+            <a href="" class="container-logo__btn" >Comprar online</a>
         </div>
         <div class="container__background"></div>
     </section>
     <!-- fin container  -->
     <!-- tienda  -->
-    <section class="tienda" id="Tienda">
-            <div class="tienda-card">
+    <section class="tienda" id="Tienda" >
+            <div class="tienda-card" data-aos="flip-left">
                 <h3 class="tienda-card__title">CACTUS</h3>
                 <a href="" class="tienda-card__buy">Comprar</a>
                 <img class="tienda-card__img" src="./img/shop/product1.webp" alt="">
                 <div class="tienda-card__background"></div>
             </div>
-            <div class="tienda-card">
+            <div class="tienda-card" data-aos="flip-left">
                 <h3 class="tienda-card__title">Plantas</h3>
                 <a href="" class="tienda-card__buy">Comprar</a>
                 <img class="tienda-card__img" src="./img/shop/product2.webp" alt="">
                 <div class="tienda-card__background"></div>
             </div>
-            <div class="tienda-card">
+            <div class="tienda-card" data-aos="flip-left">
                 <h3 class="tienda-card__title">Suculentas</h3>
                 <a href="" class="tienda-card__buy">Comprar</a>
                 <img class="tienda-card__img" src="./img/shop/product3.webp" alt="">
@@ -83,17 +91,17 @@
     <!-- somos -->
     <section class="somos" id="Somos">
         <div class="somos-row1">
-            <div class="somos-row1-card1">
+            <div class="somos-row1-card1" data-aos="zoom-in">
                 <h2 class="somos-row1-card1__title">QUIÉNES SOMOS</h2>
                 <p class="somos-row1-card1__text">Párrafo. Haz clic para editar y agregar tu propio texto. Es fácil. Haz clic en "Editar Texto" o doble clic aquí para agregar tu contenido y cambiar la fuente. Puedes arrastrar y soltar este texto donde quieras en tu página. En este espacio puedes contar tu historia y permitir a tus usuarios saber más sobre ti.</p>
                 <p class="somos-row1-card1__text">Este es un buen espacio para extenderte sobre tu empresa y servicios. Puedes usar este espacio para incorporar más detalles sobre tu empresa. Escribe sobre tu personal y los servicios que ofreces.</p>
             </div>
             <div class="somos-row1-card2">
-                <div class="somos-row1-card2-img">
+                <div class="somos-row1-card2-img" data-aos="zoom-in">
                     <img class="somos-row1-card2-img__img" src="./img/somos/somos1.jpg" alt="">
                     <div class="somos-row1-card2-img__background"></div>
                 </div>
-                <div class="somos-row1-card2-img">
+                <div class="somos-row1-card2-img" data-aos="zoom-in">
                     <img class="somos-row1-card2-img__img" src="./img/somos/somos2.jpg" alt="">
                     <div class="somos-row1-card2-img__background"></div>
                 </div>
@@ -101,11 +109,11 @@
             </div>
         </div>
         <div class="somos-row2">
-            <div class="somos-row2-card1">
+            <div class="somos-row2-card1" data-aos="zoom-in">
                 <img class="somos-row2-card1__img" src="./img/somos/somos3.jpg" alt="">
                 <div class="somos-row1-card2-img__background"></div>
             </div>
-            <div class="somos-row2-card2">
+            <div class="somos-row2-card2" data-aos="zoom-in">
                 <h3 class="somos-row2-card2__title">-10% EN COMPRAS ONLINE</h3>
                 <a href="#" class="somos-row2-card2__buy">Comprar online</a>
                 <div class="somos-row1-card2-img__background"></div>
@@ -116,7 +124,7 @@
     <!-- formulario contactos -->
     <section class="contactos" id="Faq">
         <img class="contactos__background" src="./img/contactos.jpg" alt="">
-        <form action="" class="contactos-form" method="post">
+        <form action="" class="contactos-form" method="post" data-aos="zoom-in">
             <h3 class="contactos-form__title">PARA PEDIDOS Y ENCARGOS ESPECIALES</h3>
             <div class="contactos-form-mitad">
                 <label for="Nombre" class="contactos-form__sub contactos-form-mitad__input"><b>Nombre *</b>
@@ -141,23 +149,23 @@
     <!-- fin formulario contactos  -->
     <footer class="footer">
         <div class="footer-card1">
-            <div class="footer-card1-card">
+            <div class="footer-card1-card" data-aos="fade-right">
                 <h3 class="footer-card1-card__title">TIENDA</h3>
                 <span class="footer-card1-card__txt"><b>Dirección:</b>A. Los Rosales 122, 28021 Madrid</span>
                 <span class="footer-card1-card__txt"><b>Teléfono:</b>914-123-456</span>
                 <span class="footer-card1-card__txt"><b>Email:</b>info@misitio.com</span>
             </div>
-            <div class="footer-card1-card">
+            <div class="footer-card1-card" data-aos="flip-up">
                 <h3 class="footer-card1-card__title">HORARIOS</h3>
                 <span class="footer-card1-card__txt"><b>lun-Vie:</b>7:00 - 22:00</span>
                 <span class="footer-card1-card__txt"><b>Sábados:</b>8:00 - 22:00</span>
                 <span class="footer-card1-card__txt"><b>Domingos:</b>8:00 - 23:00</span>
             </div>
-            <div class="footer-card1-card">
+            <div class="footer-card1-card" data-aos="fade-left">
                 <iframe class="footer-card1-card__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46766.93249501699!2d-77.03291781849359!3d-12.067747012163418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8ecd3b32ed1%3A0xa63ff86b9b214929!2sCircuito%20M%C3%A1gico%20del%20Agua!5e0!3m2!1ses-419!2spe!4v1641208688991!5m2!1ses-419!2spe"  allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
-        <div class="footer-card2">
+        <div class="footer-card2" data-aos="fade-up">
             <div class="footer-card2-card">
                 <h3 class="footer-card2-card__title">SUSCRIBETE</h3>
                     <label class="footer-card2-card__sub" for="suscribete">Ingresa tu email aquí*</label>
@@ -174,6 +182,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

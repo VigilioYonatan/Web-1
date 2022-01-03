@@ -753,7 +753,7 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
     }
     .navbar-nav1__link{
         font-size: 1.4rem;
-        padding: 1.4em 0;
+        padding: 1em 0;
     }
 
     .navbar-nav1-responsive{
