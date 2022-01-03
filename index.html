@@ -19,9 +19,9 @@
         </div>
         <div class="navbar-nav1">
             <a href="" class="header__logo"><h1 >VIGILIO</h1></a>
-            <a href="#" class="navbar-nav1__link">Tienda</a>
-            <a href="#" class="navbar-nav1__link">Quiénes somos</a>
-            <a href="#" class="navbar-nav1__link">FAQ</a>
+            <a href="#Tienda" class="navbar-nav1__link">Tienda</a>
+            <a href="#Somos" class="navbar-nav1__link">Quiénes somos</a>
+            <a href="#Faq" class="navbar-nav1__link">FAQ</a>
             <a href="#" class="navbar-nav1__link">Contacto</a>
         </div>
         <div class="navbar-nav2">
@@ -59,7 +59,7 @@
     </section>
     <!-- fin container  -->
     <!-- tienda  -->
-    <section class="tienda">
+    <section class="tienda" id="Tienda">
             <div class="tienda-card">
                 <h3 class="tienda-card__title">CACTUS</h3>
                 <a href="" class="tienda-card__buy">Comprar</a>
@@ -81,7 +81,7 @@
     </section>
     <!-- fin tienda  -->
     <!-- somos -->
-    <section class="somos">
+    <section class="somos" id="Somos">
         <div class="somos-row1">
             <div class="somos-row1-card1">
                 <h2 class="somos-row1-card1__title">QUIÉNES SOMOS</h2>
@@ -89,23 +89,32 @@
                 <p class="somos-row1-card1__text">Este es un buen espacio para extenderte sobre tu empresa y servicios. Puedes usar este espacio para incorporar más detalles sobre tu empresa. Escribe sobre tu personal y los servicios que ofreces.</p>
             </div>
             <div class="somos-row1-card2">
-                <img class="somos-row1-card2__img" src="./img/somos/somos1.jpg" alt="">
-                <img class="somos-row1-card2__img" src="./img/somos/somos2.jpg" alt="">
+                <div class="somos-row1-card2-img">
+                    <img class="somos-row1-card2-img__img" src="./img/somos/somos1.jpg" alt="">
+                    <div class="somos-row1-card2-img__background"></div>
+                </div>
+                <div class="somos-row1-card2-img">
+                    <img class="somos-row1-card2-img__img" src="./img/somos/somos2.jpg" alt="">
+                    <div class="somos-row1-card2-img__background"></div>
+                </div>
+               
             </div>
         </div>
         <div class="somos-row2">
             <div class="somos-row2-card1">
                 <img class="somos-row2-card1__img" src="./img/somos/somos3.jpg" alt="">
+                <div class="somos-row1-card2-img__background"></div>
             </div>
             <div class="somos-row2-card2">
                 <h3 class="somos-row2-card2__title">-10% EN COMPRAS ONLINE</h3>
                 <a href="#" class="somos-row2-card2__buy">Comprar online</a>
+                <div class="somos-row1-card2-img__background"></div>
             </div>
         </div>
     </section>
     <!-- fin somos  -->
     <!-- formulario contactos -->
-    <section class="contactos">
+    <section class="contactos" id="Faq">
         <img class="contactos__background" src="./img/contactos.jpg" alt="">
         <form action="" class="contactos-form" method="post">
             <h3 class="contactos-form__title">PARA PEDIDOS Y ENCARGOS ESPECIALES</h3>
