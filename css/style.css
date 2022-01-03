@@ -546,6 +546,114 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
     background-color: var(--text-color-second);
     color: rgba(131, 33, 33);
 }
+/* fin contactos */
+
+/* footer  */
+
+.footer{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--background-color-secondary);
+    color: var(--text-color-second);
+}
+
+.footer-card1{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-card1-card{
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.footer-card1-card__title{
+    /* text-align: center; */
+}
+.footer-card1-card__txt{
+    /* text-align: center; */
+}
+.footer-card1-card__map{
+    width: 100%;
+    height: 100%;
+}
+.footer-card2{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-card2-card__sub{
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-card2-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.footer-card2-card__title{
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: .5em;
+}
+.footer-card2-card__sub{
+    align-self: baseline;
+}
+.footer-card-card-suscribete{
+    margin: .4rem 0;
+}
+
+.footer-card2-card__email{
+    width: 15rem;
+    height: 2.4rem;
+    background-color: transparent;
+    border: .2rem solid var(--text-color-primary);
+    outline: none;
+    color: var(--text-color-second);
+}
+
+.footer-card2-card__submit{
+    width: 8rem;
+    height: 2.4rem;
+    border: .3em solid var(--text-color-second);
+    color: var(--background-color-secondary);
+    background-color: var(--text-color-second);
+}
+
+
+.footer-card2-card__submit:active{
+    background-color: transparent;
+    color: var(--text-color-second);
+}
+
+.footer-card2-card-redes{
+    display: flex;
+    padding: 1rem 0;
+}
+.footer-card2-card-redes__ico{
+    fill: var(--text-color-second);
+    width: 2.5rem;
+    margin: 0 .5rem;
+}
+
+.footer-card2-card-redes__ico:active{
+    transform: scale(1.2);
+}
+
 @media (hover:hover){
     .header__logo:hover, .navbar-nav1__link:hover, .navbar-nav2__link:hover {
         color: black;
@@ -573,6 +681,15 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
     .contactos__submit:hover{
         background-color: var(--text-color-second);
         color: rgba(131, 33, 33);
+    }
+
+    .footer-card2-card__submit:hover{
+        background-color: transparent;
+        color: var(--text-color-second);
+    }
+
+    .footer-card2-card-redes__ico:hover{
+        transform: scale(1.2);
     }
 }
 
@@ -642,6 +759,10 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
     .contactos-form{
         width: 80%;
         height: 65%;
+    }
+
+    .footer-card1-card{
+        width: 25%;
     }
 }
 @media screen and (max-width: 650px) {
@@ -722,6 +843,43 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
     .contactos-form__area{
         min-height: 5rem;
         max-height: 5rem;
+    }
+
+    .footer-card1{
+        flex-wrap: wrap;
+ 
+    }
+
+    .footer-card1-card{
+        width: 100%;
+    }
+
+    .footer-card1-card__title{
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .footer-card1-card__txt{
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .footer-card2-card__title{
+        font-size: .9rem;
+    }
+    .footer-card2-card__sub{
+        font-size: .8rem;
+    }
+
+    .footer-card2-card__email{
+        width: 10rem;
+    }
+    .footer-card2-card__submit{
+        width: 5rem;
+    }
+
+    .footer-card2-card-redes__ico{
+        width: 30px;
     }
 }
 @media screen and (max-width: 400px) {
