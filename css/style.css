@@ -20,7 +20,11 @@
     justify-content: space-between;
     align-items: center;
     height: 3.75rem;
-    
+    position: fixed;
+    top: 0;
+    left: 2.5%;
+    background-color: var(--text-color-second);
+    z-index: 20;
 }
 
 
@@ -176,6 +180,7 @@
 /* container  */
 .container{
     width: 95%;
+    margin-top: 3.74rem;
     height: calc(100vh - 3.75rem);
     margin-left: auto;
     margin-right: auto;
@@ -256,6 +261,84 @@
     margin-top: 2em;
     padding: .7em 3em;
     text-align: center;
+    border: .2rem solid var(--text-color-primary);
+}
+
+/* tienda  */
+
+.tienda{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+
+.tienda-card{
+    padding-top: 1.5rem;
+    width: 33%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.tienda-card__img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+
+}
+
+.tienda-card__title{
+    color: var(--text-color-primary);
+    font-size: 1rem;
+    letter-spacing: .1em;
+    font-family: 'AvenirBolder';
+    padding-bottom: 1.2rem;
+    position: relative;
+    margin: 0;
+}
+
+.tienda-card__title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    width: 30%;
+    height: .3rem;
+    background-color: var(--text-color-primary);
+
+}
+
+.tienda-card__buy{
+    color: var(--text-color-second);
+    text-decoration: none;
+    background-color: var(--text-color-primary);
+    font-size: .9rem;
+    margin-top: 1em;
+    padding: .8em 4em;
+    border: .2rem solid var(--text-color-primary);
+}
+
+.tienda-card__background{
+    background-color: var(--text-color-primary);
+    opacity: .0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -5;
+}
+
+.tienda-card:active .tienda-card__background{
+    opacity: .3;
 }
 @media (hover:hover){
     .header__logo:hover, .navbar-nav1__link:hover, .navbar-nav2__link:hover {
@@ -263,13 +346,24 @@
         transition: color .5s;
     }
 
-    .container-logo__btn:hover{
+    .container-logo__btn:hover, .tienda-card__buy:hover{
         background-color: var(--text-color-second);
         color: var(--text-color-primary);
         transition: all .8s;
+        
+    }
+
+
+    .tienda-card:hover .tienda-card__background{
+        opacity: .3;
     }
 }
 
+@media screen and (max-width: 1200px){
+    .tienda-card{
+        height: 20rem;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .header__btn{
@@ -329,9 +423,18 @@
     .container-logo__btn{
         font-size: .8rem;
     }
+
+    .tienda-card{
+        width: 50%;
+        height: 20rem;
+    }
 }
 @media screen and (max-width: 400px) {
     .navbar-nav1{
         width: 60%;
+    }
+    .tienda-card{
+        width: 100%;
+        height: 15rem;
     }
 }
