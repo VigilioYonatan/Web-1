@@ -1,0 +1,23 @@
+
+/* animacion  */
+.animation-initial{
+    opacity: 0;   
+    transition: all 0.5s;
+}
+.animation-initial-showUp{
+    opacity: 0;   
+    transition: all 0.5s;
+}
+
+/* hacia arriba */
+.showUp{
+    animation: showUp 1s;
+}
+
+@keyframes showUp{
+    0% {
+        transform: translateY(5.75rem);
+    } 100%{
+        transform: translateY(0);
+    }
+}
