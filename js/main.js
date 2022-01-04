@@ -1,5 +1,4 @@
-// hamburguer 
-
+// boton responsive header hamburguesa 
 const btn_hamburguer = document.querySelector('#btn-responsive');
 const navbar1 = document.querySelector('.navbar-nav1');
 function toggleBtn() {
