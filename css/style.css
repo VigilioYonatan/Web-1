@@ -10,9 +10,10 @@
 }
 :root{
     /* text variables  */
-    --text-color-primary:#a05841;
-    --text-color-second:#fff;
+    --text-color-primary:#620686;
+    --text-color-second:rgb(255, 255, 255);
     /* background  */
+    --background-color-primary : rgb(255, 255, 255);
     --background-color-secondary: #123132;
 }
 
@@ -24,7 +25,7 @@
     width: 90%;
     border: .1rem solid var(--text-color-primary);
     height: 3em;
-    background-color: white;
+    background-color: var(--background-color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,6 +51,7 @@
     width: 95%;
     font-size: 1rem;
     text-align: center;
+    color: var(--text-color-primary);
 }
 /* header */
 .header{
@@ -62,7 +64,7 @@
     position: fixed;
     top: 0;
     left: 2.5%;
-    background-color: var(--text-color-second);
+    background-color: var(--background-color-primary);
     z-index: 20;
 }
 
@@ -157,7 +159,7 @@
     border-radius: 50%;
     cursor: pointer;
     transition: 0.2s;
-box-shadow: -.1em .1em 3em var(--text-color-primary);
+    box-shadow: -.1em .1em 3em var(--text-color-primary);
 }
 
 .icon-btn:hover{
@@ -447,11 +449,13 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
     width: 50%;
     height: 100%;
     position: relative;
+    
 }
 
 .somos-row1-card2-img__img{
     width: 100%;
     height: inherit;
+    object-fit: cover;
 }
 
 .somos-row1-card2-img:active .somos-row1-card2-img__background, .somos-row2-card1:active .somos-row1-card2-img__background{
@@ -567,7 +571,11 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
 .contactos-form__input{
     width: 100%;
     height: 2.4rem;
-    outline-color: #a05841;
+    outline: .1rem solid var(--text-color-primary);
+}
+
+.contactos-form__area{
+    outline: .1rem solid var(--text-color-primary);
 }
 .contactos-form__input:focus, .contactos-form__area:focus{
     outline: .2rem solid var(--text-color-primary);
@@ -590,15 +598,15 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
 }
 .contactos__submit{
     width: 90%;
-    background-color: rgba(131, 33, 33);
+    background-color: var(--text-color-primary);
     padding: .6rem 0;
     color: var(--text-color-second);
     cursor: pointer;
-    border: .1rem solid rgba(131, 33, 33);
+    border: .1rem solid var(--text-color-primary);
 }
 .contactos__submit:active{
-    background-color: var(--text-color-second);
-    color: rgba(131, 33, 33);
+    background-color: var(--text-color-primary);
+    color: var(--text-color-primary);
 }
 /* fin contactos */
 
@@ -744,7 +752,7 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
 
     .contactos__submit:hover{
         background-color: var(--text-color-second);
-        color: rgba(131, 33, 33);
+        color: var(--text-color-primary);
     }
 
     .footer-card2-card__submit:hover{
@@ -762,6 +770,16 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
     .tienda-card{
         height: 20rem;
     }
+
+    .somos-row1-card2-img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .somos-row1-card2-img__img{
+        height: 100%;
+    }
+
 
     .contactos-form{
         width: 60%;
@@ -785,7 +803,7 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
         width: 35%;
         height: 50%;
         box-shadow: .3rem .6rem .8rem rgba(0, 0, 0, 0.342);
-        background-color: var(--text-color-second);
+        background-color: var(--background-color-primary);
         z-index: 10;
         transform:translateX(-120%);
         transition: transform .7s ease-in;
@@ -811,7 +829,7 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
         font-size: .9rem;
         line-height: 1.1em;
     }
-
+    
     .somos-row1-card2__img{
         width: 100%;
         height: 50%;
@@ -826,10 +844,14 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
         width: 80%;
 
     }
+    .contactos{
+        height: 45rem;
+    }
+
 
     .contactos-form{
-        width: 80%;
-        height: 65%;
+        width: 70%;
+        height: 80%;
     }
 
     .footer-card1-card{
@@ -875,23 +897,51 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
         height: 20rem;
     }
     .somos{
-      height: 85rem;
+      height: 70rem;
     }
     .somos-row1-card1, .somos-row1-card2, .somos-row2-card1, .somos-row2-card2{
+        width: 50%;
+        height: 100%;
+    }
+
+    .somos-row1-card2-img{
         width: 100%;
         height: 50%;
     }
+
+    .somos-row1-card2-img__img{
+        height: 100%;
+    }
+
+    
 
     .somos-row1-card2__img{
         width: 50%;
         height: 100%;
     }
+
+    .somos-row2-card1{
+        width: 100%;
+        height: 50%;
+    }
+    .somos-row2-card2{
+        width: 100%;
+        height: 50%;
+    }
+
+    .somos-row2-card2__title{
+        font-size: 2rem;
+    }
+
+    .somos-row2-card2__buy{
+        font-size: .9rem;
+    }
     .contactos{
-        height: 48.5rem;  
+        height: 40.5rem;  
     }
     .contactos-form{
-        width: 95%;
-        height: 75%;
+        width: 85%;
+        height: 85%;
         padding: 0 .5rem;
     }
 
@@ -968,7 +1018,7 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
     
 
     .somos{
-        height: 75rem;
+        height: 65rem;
     }
     .somos-row1-card1__title{
         font-size: 1rem;
@@ -980,11 +1030,33 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
     .somos-row2-card2__title{
         margin: .5em 0;
     }
+
+    .somos-row1-card1{
+        width: 100%;
+        height: 50%;
+    }
+
+    .somos-row1-card2{
+        width: 100%;
+        height: 50%;
+    }
+
+    .somos-row1-card2-img{
+        width: 50%;
+        height: 100%;
+    }
+    .somos-row1-card2-img__img{
+        width: 100%;
+        height: 100%;
+    }
+
+  
     .contactos{
-        height: 48rem;
+        height: 35rem;
     }
     .contactos-form{
-        height: 65%;
+        width: 95%;
+        height: 95%;
         justify-content: center;
     }
     
