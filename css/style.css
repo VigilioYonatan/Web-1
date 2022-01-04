@@ -15,6 +15,42 @@
     /* background  */
     --background-color-secondary: #123132;
 }
+
+/* condiciones  */
+.condition{
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    border: .1rem solid var(--text-color-primary);
+    height: 3em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.condition__close{
+    position: absolute;
+    top: -.5rem;
+    right: -.6rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--text-color-primary);
+    text-align: center;
+    line-height: 1.5rem;
+    border-radius: 50%;
+    color: var(--text-color-second); 
+    cursor: pointer;
+    border: none;
+}
+
+.condition__text{
+    width: 95%;
+    font-size: 1rem;
+    text-align: center;
+}
 /* header */
 .header{
     width: 95%;
@@ -671,6 +707,7 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
 .footer-card2-card-redes__ico:active{
     transform: scale(1.2);
 }
+/* fin footer  */
 
 @media (hover:hover){
     .header__logo:hover, .navbar-nav1__link:hover, .navbar-nav2__link:hover {
@@ -800,6 +837,10 @@ box-shadow: -.1em .1em 3em var(--text-color-primary);
     }
 }
 @media screen and (max-width: 650px) {
+    .condition__text{
+        font-size: .8rem;
+
+    }
     .navbar-nav1{
         width: 50%;
     }

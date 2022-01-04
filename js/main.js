@@ -1,3 +1,11 @@
+// terminos y condiciones 
+
+const terminos = document.getElementById('conditionClose');
+function cerrarTerminos() {
+    terminos.parentElement.remove();
+}
+terminos.addEventListener('click', cerrarTerminos);
+
 // boton responsive header hamburguesa 
 const btn_hamburguer = document.querySelector('#btn-responsive');
 const navbar1 = document.querySelector('.navbar-nav1');
